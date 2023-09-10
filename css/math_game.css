@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin-top: 350px;
+}
+
+.card-body {
+  justify-content: center;
+}
+
+#quest {
+  font-size: 1.5rem;
+}
+
+#answer {
+  width: 7vw;
+}
+
+.card-img-top {
+  height: 20vh;
+}
+
+.card-body {
+  height: 20vh;
+  padding-left: 100px;
+}
+
+.form-control {
+  padding-left: 50vw;
+  width: 15px;
+}
+
+.quest {
+  padding-right: 4vw;
+}
+
+.col-auto {
+  padding-right: 100px;
+}
+
+#btn1 {
+  margin-left: 91px;
+}
+@media (max-width: 768px) {
+  .container {
+    margin-top: 150px;
+  }
+
+  .card-body {
+    padding: 0 10px;
+  }
+
+  .form-control {
+    padding-left: 0;
+  }
+
+  .col-auto {
+    padding-right: 10px;
+  }
+
+  #btn1 {
+    margin-left: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    margin-top: 150px;
+  }
+
+  .card-body {
+    padding: 0 10px;
+    flex-direction: column; /* Stack elements vertically on smaller screens */
+    align-items: center; /* Center align elements */
+  }
+
+  .form-control {
+    padding-left: 0;
+    width: 100%; /* Make the input width 100% */
+    max-width: none; /* Reset max-width */
+    margin-right: 0; /* Remove the margin between inputs */
+    margin-bottom: 10px; /* Add some spacing between inputs */
+  }
+
+  .col-auto {
+    padding-right: 10px;
+  }
+
+  #btn1 {
+    margin-left: 20px;
+  }
+}
