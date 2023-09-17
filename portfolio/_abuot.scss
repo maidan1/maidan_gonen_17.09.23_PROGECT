@@ -1,11 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 
 .container4 {
   background-image: url(../imag/code.jpeg);
   border-radius: 25px;
-  margin: 30px;
-  width: 97.5vw;
-  height: auto;
+  height: 100%;
   padding-bottom: 30px;
 }
 
@@ -15,6 +13,8 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 30px;
+  border-radius: 50%;
 }
 
 .container4 h3 {
@@ -25,11 +25,14 @@
   font-family: "Josefin Sans", sans-serif;
   text-align: center;
   line-height: 2;
-  font-weight: bold;
+  font-size: large;
 }
 
 .container4 p {
   color: #ffffff;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: lighter;
+  font-size: large;
 }
 
 .container4 a {

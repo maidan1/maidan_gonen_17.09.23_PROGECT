@@ -1,23 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap");
 
 .container {
-    width: 1000px;
-    box-shadow: 0 0 4px #00000029;
-    font-size: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    background-color: white;
+  width: 1000px;
+  box-shadow: 0 0 4px #00000029;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
 }
 
 .gallery {
-    margin: 0 10px;
-
+  margin: 0 10px;
 }
 
 @media screen and (max-width: 500px) {
-    .gallery {
-        width: 20%;
-    }
-
+  .gallery {
+    width: 20%;
+  }
 }

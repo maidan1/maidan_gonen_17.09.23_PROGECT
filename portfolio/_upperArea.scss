@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,10 +6,8 @@
 }
 
 .box1 {
-  width: auto;
-  height: 500px;
   padding: 50px;
-  background-image: url(../imag/coding.jpg);
+  background-image: url(/imag/Website-Design.webp);
   background-color: #56aaf3;
   border: 1px solid #000;
   padding-top: 50px;
@@ -18,12 +17,13 @@
 .box1 h2 {
   font-size: 50pt;
   color: #ffffff;
-  font-family: Josefin + Sans;
+  font-family: "Josefin Sans", sans-serif;
   text-align: center;
   line-height: 3;
 }
 
 p {
+  font-family: "Josefin Sans", sans-serif;
   color: #ffffff;
   font-size: 15pt;
   text-align: center;

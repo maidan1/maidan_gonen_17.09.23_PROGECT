@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap");
-
+/* Import the font */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap");
@@ -17,16 +18,48 @@ html {
   scroll-behavior: smooth;
 }
 
-nav {
+#navbar {
+  width: 100%;
+  height: 7%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 10%;
-  background-color: rgb(255, 255, 255);
   position: fixed;
   z-index: 1;
 }
 
+.navbar-brand img {
+  border-radius: 50%;
+}
+
+.nav-item .nav-link {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+@media screen and (max-width: 990px) {
+  #navbar {
+    height: auto;
+  }
+  .nav-item .nav-link {
+    font-size: 1rem;
+  }
+  #navbarNav {
+    background-color: white;
+    border: 1px solid #000;
+  }
+  #nav-link {
+    width: 500px;
+    margin: auto;
+  }
+  #nav-link:hover {
+    background-color: aqua;
+  }
+  #btn3 {
+    display: block;
+  }
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -34,10 +67,8 @@ nav {
 }
 
 .box1 {
-  width: auto;
-  height: 500px;
   padding: 50px;
-  background-image: url(../imag/coding.jpg);
+  background-image: url(/imag/Website-Design.webp);
   background-color: #56aaf3;
   border: 1px solid #000;
   padding-top: 50px;
@@ -47,12 +78,13 @@ nav {
 .box1 h2 {
   font-size: 50pt;
   color: #ffffff;
-  font-family: JosefinSans;
+  font-family: "Josefin Sans", sans-serif;
   text-align: center;
   line-height: 3;
 }
 
 p {
+  font-family: "Josefin Sans", sans-serif;
   color: #ffffff;
   font-size: 15pt;
   text-align: center;
@@ -75,9 +107,9 @@ p {
   }
 }
 .container {
+  background-color: white;
   width: 1000px;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.1607843137);
-  font-size: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -96,9 +128,7 @@ p {
 .container4 {
   background-image: url(../imag/code.jpeg);
   border-radius: 25px;
-  margin: 30px;
-  width: 97.5vw;
-  height: auto;
+  height: 100%;
   padding-bottom: 30px;
 }
 
@@ -108,6 +138,8 @@ p {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 30px;
+  border-radius: 50%;
 }
 
 .container4 h3 {
@@ -118,11 +150,14 @@ p {
   font-family: "Josefin Sans", sans-serif;
   text-align: center;
   line-height: 2;
-  font-weight: bold;
+  font-size: large;
 }
 
 .container4 p {
   color: #ffffff;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: lighter;
+  font-size: large;
 }
 
 .container4 a {
@@ -159,6 +194,8 @@ p {
   }
 }
 .container1 {
+  background-image: url(/imag/images-apase.jpeg);
+  width: 100%;
   display: flex;
   background-color: #ccc;
   justify-content: center;
@@ -166,6 +203,7 @@ p {
 }
 
 .container1 h4 {
+  color: rgb(255, 255, 255);
   justify-content: center;
   display: flex;
   align-items: center;
@@ -180,7 +218,7 @@ p {
   align-items: center;
   position: relative;
   width: 100%;
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 .card {
@@ -236,6 +274,7 @@ p {
   position: relative;
   display: flex;
   padding-bottom: 80px;
+  padding: 30px;
 }
 
 .box3 h6 {
@@ -266,7 +305,7 @@ p {
 label {
   height: 40px;
   border-radius: 4px;
-  margin: 10px 0 18px 0;
+  margin: 10px 0 10px 0;
 }
 
 input {
@@ -336,7 +375,7 @@ textarea {
 footer {
   width: auto;
   height: 200px;
-  background: #1AE0EC;
+  background: #1ae0ec;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -346,9 +385,22 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: auto;
 }
 
-.icon img {
+.icon a {
+  background-color: #1ae0ec;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  text-decoration: none;
+  margin: 10px;
+}
+
+.icon a img {
   margin-bottom: 10px;
 }
 
@@ -357,7 +409,11 @@ footer {
   font-size: 14px;
   line-height: 21px;
   letter-spacing: 0px;
-  color: #2C2C2C;
+  color: #2c2c2c;
+  display: flex;
+  justify-content: space-between;
+  color: #1ae0ec;
+  padding: 10px;
 }
 
 .footer1 {
@@ -367,7 +423,23 @@ footer {
   text-align: center;
 }
 
+@media screen and (max-width: 990px) {
+  .icon {
+    flex-direction: row;
+  }
+  .icon a {
+    width: 50px;
+    height: 80px;
+    margin: 5px;
+  }
+  .icon a img {
+    margin-bottom: 5px;
+  }
+}
 .container2 {
+  background-image: url(/imag/images-apase.jpeg);
+  width: 100%;
+  height: 100%;
   display: flex;
   background-color: #6f6f6f;
   justify-content: center;
@@ -394,7 +466,7 @@ footer {
   width: 100%;
 }
 
-img {
+#gameCard img {
   background-size: cover;
   border-radius: 25%;
   width: 250px;

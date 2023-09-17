@@ -36,7 +36,6 @@ const displayPokemon = (pokemon) => {
   </div>
 </div> 
 `
-      // <p>${pokemon.desc}</p>
     )
     .join("");
   pokedex.innerHTML = pokemonHTMLString;
@@ -55,11 +54,3 @@ window.addEventListener("load", () => {
     }
   });
 });
-
-// `
-//         <li class="card">
-//             <img class="card-image" src="${pokemon.image}"/>
-//             <h2 class="card-title">${pokemon.id}. ${pokemon.name}</h2>
-//             <p class="card-subtitle">Type: ${pokemon.type}</p>
-//         </li>
-//     `
